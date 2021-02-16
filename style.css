@@ -8,32 +8,78 @@ h2 {
 	color:#475841;
 }
 
-button {
-	background-color:#FFFFFF;
-	margin:-3px;
-	font-size:20px;
-	color:#475841;
-	display:inline-block;
-	text-align:center;
-	font-weight:thick;
-	font-style:italic;
-	border-color:#475841;
-	border-style:solid;
-	
-	
-}
-
 .smallbutton {
 	width:100px;
 	height:90px;
+	background-color:#FFFFFF;
+	margin:-3px;
+	font-size:30px;
+	color:#475841;
+	text-align:center;
+	font-weight:thick;
+	font-style:bold;	
+	border-color:#475841;
+	border:1px solid teal;
+	margin-right:-2px;
 
 }
 
 .largebutton {
-	width:198px;
+	width:199px;
 	height:90px;
+	background-color:#FFFFFF;
+	margin:-3px;
+	font-size:30px;
+	color:#475841;
+	text-align:center;
+	font-weight:thick;
+	font-style:bold;	
+	border-color:#teal;
+	border:1px solid teal;
+	margin-right:-2px;
 }
 
-.table {
-	align:center
+table.edit {
+	position:relative;
+	margin-left:30%;
+	border-radius:15px	
 }
+
+#result {
+	width:480px;
+	height:90px;
+	position:relative;
+	vertical-align:50%
+	font-size:30px;
+}
+
+th {
+	border: 1px solid black;
+	font-size:30px;
+	background-color:#FFFFFF;
+	vertical-align:50%;
+	width:20px;
+}
+
+#beq {
+	background-color:#90e0ef;
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b0 {
+	background-color:#FFFFFF;
+}
+
+#bdot, #bpercent {
+	background-color:#FFFFFF;
+	
+}
+
+#bdel {
+	background-color:#00b4d8;
+	font-style:italic;
+}
+
+#badd, #bdiv, #bsub, #bmult {
+	background-color:#caf0f8;
+}
+
