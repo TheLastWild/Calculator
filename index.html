@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<h1 align="center">This document is a practice excercise for a learner. </h1>
-		<h3 align="center">All comments are meant to be memos to make remembering them easier.</h3><br><br>
+		<h3 align="center">Most comments are meant to be memos to make remembering them easier.</h3><br><br>
 		<h2 align="center">Clickable calculator</h1><br>
 				
 		<!--		<button type="button" value="text" class="smallbutton">1</button>
@@ -39,38 +39,62 @@
 				<button type="button" value="text" class="smallbutton">%</button>
 				<button type="button" value="text" class="largebutton">=</button>
 			-->
-			<br><br>
 			
-			<table>
-				<tr>
-					<td><button type="button" value="text" class="smallbutton">1</button></td>
-					<td><button type="button" value="text" class="smallbutton">2</button></td>
-					<td><button type="button" value="text" class="smallbutton">3</button></td>
-					<td><button type="button" value="text" class="smallbutton">DEL</button></td>
-					<td><button type="button" value="text" class="smallbutton">AC</button></td>
+			<br><br>
+		<form>
+			<!--<label for="result"></label>
+			<output id="result" name="result" ></output>-->		
+			
+			<table class="edit">
+				<tr id="tresult">
+					<th colspan="5" ><input type="text" id="result" />
+						<script> 
+			 			function dis(val) 
+						{ 
+						document.getElementById("result").value+=val 
+						} 
+           				function solve() 
+						{ 
+						let x = document.getElementById("result").value 
+						let y = eval(x) 
+						document.getElementById("result").value = y 
+						} 
+						function clr() 
+						{ 
+						document.getElementById("result").value = "" 
+						} 
+						</script> 
+					</th>
+
 				</tr>
 				<tr>
-					<td><button type="button" value="text" class="smallbutton">4</button></td>
-					<td><button type="button" value="text" class="smallbutton">5</button></td>
-					<td><button type="button" value="text" class="smallbutton">6</button></td>
-					<td><button type="button" value="text" class="smallbutton">*</button></td>
-					<td><button type="button" value="text" class="smallbutton">/</button></td>
+					<td><input type="button" value="1" class="smallbutton" id="b1" onclick="dis('1')"></button></td>
+					<td><input type="button" value="2" class="smallbutton" id="b2" onclick="dis('2')"></button></td>
+					<td><input type="button" value="3" class="smallbutton" id="b3" onclick="dis('3')"></button></td>
+					<td colspan='2'><input type="button" value="DEL" class="largebutton" id="bdel" onclick="clr()"></button></td>
+					<td></td>
 				</tr>
 				<tr>
-					<td><button type="button" value="text" class="smallbutton">7</button></td>
-					<td><button type="button" value="text" class="smallbutton">8</button></td>
-					<td><button type="button" value="text" class="smallbutton">9</button></td>
-					<td><button type="button" value="text" class="smallbutton">+</button></td>
-					<td><button type="button" value="text" class="smallbutton">-</button></td>
+					<td><input type="button" value="4" class="smallbutton" id="b4" onclick="dis('4')"></button></td>
+					<td><input type="button" value="5" class="smallbutton" id="b5" onclick="dis('5')"></button></td>
+					<td><input type="button" value="6" class="smallbutton" id="b6" onclick="dis('6')"></button></td>
+					<td><input type="button" value="*" class="smallbutton" id="bmult" onclick="dis('*')"></button></td>
+					<td><input type="button" value="/" class="smallbutton" id="bdiv" onclick="dis('/')"></button></td>
 				</tr>
 				<tr>
-					<td><button type="button" value="text" class="smallbutton">0</button></td>
-					<td><button type="button" value="text" class="smallbutton">.</button></td>
-					<td><button type="button" value="text" class="smallbutton">%</button></td>
-					<td colspan='2'><button type="button" value="text" class="largebutton">=</button></td>
+					<td><input type="button" value="7" class="smallbutton" id="b7" onclick="dis('7')"></button></td>
+					<td><input type="button" value="8" class="smallbutton" id="b8" onclick="dis('8')"></button></td>
+					<td><input type="button" value="9" class="smallbutton" id="b9" onclick="dis('9')"></button></td>
+					<td><input type="button" value="+" class="smallbutton" id="badd" onclick="dis('+')"></button></td>
+					<td><input type="button" value="-" class="smallbutton" id="bsub" onclick="dis('-')"></button></td>
+				</tr>
+				<tr>
+					<td colspan='2'><input type="button" value="0" class="largebutton" id="b0" onclick="dis('0')"></button></td>
+					<td><input type="button" value="," class="smallbutton" id="bdot" onclick="dis('.')"></button></td>
+					<td colspan='2'><input type="button" value="=" class="largebutton" id="beq" onclick="solve()"></button></td>
 					<td></td>
 				</tr>
 			</table>
-	
+		</form>
 	</body>
 </html>
