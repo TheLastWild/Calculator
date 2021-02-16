@@ -1,0 +1,39 @@
+body {
+	background-color:#F6F6F6;
+	font-family:Arial;
+	color:#3F403F;
+	}
+	
+h2 {
+	color:#475841;
+}
+
+button {
+	background-color:#FFFFFF;
+	margin:-3px;
+	font-size:20px;
+	color:#475841;
+	display:inline-block;
+	text-align:center;
+	font-weight:thick;
+	font-style:italic;
+	border-color:#475841;
+	border-style:solid;
+	
+	
+}
+
+.smallbutton {
+	width:100px;
+	height:90px;
+
+}
+
+.largebutton {
+	width:198px;
+	height:90px;
+}
+
+.table {
+	align:center
+}
